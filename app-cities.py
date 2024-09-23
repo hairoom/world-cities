@@ -40,6 +40,6 @@ st.write(df[['city', 'country', 'population']])
 st.subheader('Total Population By Country')
 fig, ax = plt.subplots(figsize=(20, 5))
 pop_sum = df.groupby('country')['population'].sum()
-pop_sum.plot.bar(ax=ax)
+pop_sum.plot.bar()
 st.pyplot(fig)
 
